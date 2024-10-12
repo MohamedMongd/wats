@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إرسال رسالة واتساب مباشرة دون حفظ الرقم.">
+    <title>إرسال رسالة واتساب</title>
+     
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+   <!-- Font Awesome for Social Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="h1 text-center p-1"><p>عمل رابط واتساب مباشر لرقمك</p></nav>
+    <section class="container .body">
+        <h1>أداة إنشاء رابط و إرسال رسالة واتساب</h1>
+        <div class="input-group">
+            <label for="countryCode">رمز الدولة:</label>
+            <select id="countryCode">
+                <option value="+20">+20 مصر</option>
+                <option value="+966">+966 السعودية</option>
+                <option value="+971">+971 الإمارات</option>
+                
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="phoneNumber">رقم الهاتف:</label>
+            <input type="text" id="phoneNumber" placeholder="أدخل رقم الهاتف" required>
+        </div>
+        <button onclick="generateLink()">توليد رابط واتساب</button>
+        <div class="output">
+            <input type="text" id="whatsAppLink" readonly placeholder="رابط واتساب سيظهر هنا">
+            <button onclick="copyLink()">نسخ الرابط</button>
+            <button id="openWhatsApp" onclick="openWhatsApp()">فتح في واتساب</button>
+        </div>
+    </section>
+
+    <section class="info">
+        <h2>أهمية روابط الواتساب المباشرة</h2>
+        <p>
+            روابط WhatsApp تحقق سهولة كبيرة في عملية التواصل الفوري مع الزبائن أو حتى مع الأصدقاء. فبدلاً من إرسال رقم الهاتف يدوياً وطلب إضافته، يمكنك ببساطة مشاركة رابط مباشر يفتح المحادثة مباشرةً في تطبيق WhatsApp.
+        </p>
+        <p>
+            يستخدم العديد من المحترفين ورواد الأعمال هذه الطريقة في التسويق لمنتجاتهم أو خدماتهم، حيث تتيح لهم التواصل السريع مع العملاء. يساهم هذا الحل في توفير الوقت وتحسين تجربة العميل لأنه يمكنه البدء في التواصل بنقرة واحدة فقط.
+        </p>
+        <p>
+            كما أن هذه الروابط فعّالة في التسويق الرقمي، حيث يمكن تضمينها في الإعلانات على وسائل التواصل الاجتماعي أو المواقع الإلكترونية لتسريع عملية التواصل مع العملاء المحتملين.
+        </p>
+    </section>
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+            <!-- Left -->
+            <div class="me-1 d-none d-lg-block">
+                <div class="text-center p-3" >
+                    <!-- © 2024 جميع الحقوق محفوظة:
+                    <a class="text-white" href="#">اسم شركتك</a> -->
+                    Mohamed Monged جميع الحقوق محفوظة لدى © 2024
+                </div>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i   class="fab fa-facebook-f"></i>
+                </a>
+                
+                <a href="#" class="me-4 text-reset">
+                    <i  class="fab fa-google"></i>
+                </a>
+                
+                <a href="#" class="me-4 text-reset">
+                    <i   class="fab fa-linkedin"></i>
+                </a>
+                <a  href="#" class="me-4 text-reset github">
+                    <i  class="fab fa-github mo "></i>
+                
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        
+        <!-- Copyright -->
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
